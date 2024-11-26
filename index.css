@@ -16,6 +16,24 @@ body > h1.title {
   text-align: center;
 }
 
-body > div.notice {
+body > div.selector {
+  display: grid;
+  height: 48px;
+  grid-template-columns: 1fr 128px 300px 1fr;
+  gap: 0 16px;
+}
+
+body > div.selector > input {
+  height: 100%;
+  padding: 8px 16px;
+  font-size: larger;
+  border-radius: 8px;
   text-align: center;
+  grid-column: 2 / 3;
+}
+body > div.selector > button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: larger;
+  grid-column: 3 / 4;
 }
